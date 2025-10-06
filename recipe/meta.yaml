@@ -1,13 +1,13 @@
 {% set name = "price-parser" %}
-{% set version = "0.3.4" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/price-parser-{{ version }}.tar.gz
-  sha256: 8a286caa40fe28912f5e596bf09d72e085f80c4b2acaf5dd22aab8298e6ba731
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 5053af8726de8d412d066f69f721ed5e3e0d61a29f27f6fc3a348d60917ece30
 
 build:
   noarch: python
